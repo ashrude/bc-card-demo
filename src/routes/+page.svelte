@@ -134,12 +134,10 @@
 		sex: string,
 		height: number | null,
 
-		clump: string,
 		phn: string | null,
 		weight: number | null,
 		eye_colour: string | null,
 		hair_colour: string | null,
-
 	}
 
 	function decode_basic(text: string): data {
@@ -206,7 +204,6 @@
 			sex: sex,
 			height: height,
 
-			clump: basic.detail_clump,
 			phn: phn,
 			weight: Number(details?.substring(0, details.length - 6)),
 			eye_colour: details?.substring(details.length - 6, details.length - 3) ? details?.substring(details.length - 6, details.length - 3) : null,
