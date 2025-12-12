@@ -216,6 +216,7 @@
 
 <h1>BC Card Decoder demo</h1>
 <p>This is demo, all data is processed on-device. It uses <a href="https://github.com/rxing-core/rxing-wasm/tree/main">rxing-wasm</a> and a rudimentary aamva parser, specs found <a href="https://www2.gov.bc.ca/assets/gov/health/practitioner-pro/medical-services-plan/ch4.pdf">here.</a></p>
+<a href="https://github.com/ashrude/bc-card-demo">Source</a>
 <p>by Ashley Rudelsheim at <a href="https://itsphere.ca">ITSphere</a></p>
 
 <div>
