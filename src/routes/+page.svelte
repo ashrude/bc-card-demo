@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { convert_js_image_to_luma, convert_canvas_to_luma, decode_barcode_with_hints, decode_multi, DecodeHintDictionary, DecodeHintTypes, BarcodeFormat } from "rxing-wasm";
+	import { convert_canvas_to_luma, decode_barcode_with_hints, DecodeHintDictionary, DecodeHintTypes, BarcodeFormat } from "rxing-wasm";
 	
 	//const aamva = require('aamva') as any;
 
@@ -32,6 +32,7 @@
 		let result;
 		try {
 			let hints = new DecodeHintDictionary();
+			hints.set_hint(DecodeHintTypes.PossibleFormats, "pdf417")
 
 			result = decode_barcode_with_hints(luma_data, canvas.width, canvas.height, hints, true);
 		} catch {
